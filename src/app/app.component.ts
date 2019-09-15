@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+
+  rockBands: string[] = ['Aerosmith', 'ACDC', 'Metallica', 'Pink Floyd', 'Nirvana', 'Korn'];
+  bandaNueva = '';
+
+  cambiarTitulo() {
+    this.title = 'FEL';
+  }
+
+  addBand() {
+    this.rockBands.push(this.bandaNueva);
+    this.bandaNueva = '';
+  }
 }
